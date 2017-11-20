@@ -1,0 +1,19 @@
+<template format="4"
+          revision="1"
+          name="MVP DataRepository Template"
+          description="Creates a new Data Repository - Dao, DataSources">
+
+    <category value="MVP" />
+    <formfactor value="Mobile" />
+
+    <parameter id="dataClassName"
+               name="Data Class Name"
+               type="string"
+               constraints="class|unique|nonempty"
+               default="CustomData"
+               help="The name of the data object for MVP views"/>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe.xml.ftl"/>
+
+</template>
