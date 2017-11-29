@@ -17,7 +17,7 @@ public class ${dataClassName}sLocalDataSource implements ${dataClassName}sDataSo
         mDao = dao;
     }
 
-    public synchronized static ${dataClassName}sLocalDataSource getInstance(@NonNull AppExecutors appExecutors, @NonNull ${dataClassName}sDao dao) {
+    public static synchronized ${dataClassName}sLocalDataSource getInstance(@NonNull AppExecutors appExecutors, @NonNull ${dataClassName}sDao dao) {
         if (sUniqueInstance == null) {
             sUniqueInstance = new ${dataClassName}sLocalDataSource(appExecutors, dao);
         }

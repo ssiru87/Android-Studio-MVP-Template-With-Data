@@ -17,7 +17,7 @@ public class ${dataClassName}sRepository implements ${dataClassName}sDataSource 
         mLocalDataSource = checkNotNull(localDataSource);
     }
 
-    public synchronized static ${dataClassName}sRepository getInstance(${dataClassName}sDataSource remoteDataSource,
+    public static synchronized ${dataClassName}sRepository getInstance(${dataClassName}sDataSource remoteDataSource,
                                                                        ${dataClassName}sDataSource localDataSource) {
         if (sUniqueInstance == null) {
             sUniqueInstance = new ${dataClassName}sRepository(remoteDataSource, localDataSource);

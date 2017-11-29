@@ -14,7 +14,7 @@ public class ${dataClassName}sRemoteDataSource implements ${dataClassName}sDataS
     private ${dataClassName}sRemoteDataSource(){
     }
 
-    public synchronized static ${dataClassName}sRemoteDataSource getInstance() {
+    public static synchronized ${dataClassName}sRemoteDataSource getInstance() {
         if (sUniqueInstance == null) {
             sUniqueInstance = new ${dataClassName}sRemoteDataSource();
         }
